@@ -17,7 +17,7 @@ CREATE TABLE ActorSequence (id INTEGER PRIMARY KEY NOT NULL,sequence INTEGER NOT
 CREATE TABLE LightSequence (id INTEGER PRIMARY KEY NOT NULL,sequence INTEGER NOT NULL REFERENCES KeyFrameSequence,light INTEGER NOT NULL REFERENCES Light)
 CREATE TABLE Camera (id INTEGER PRIMARY KEY NOT NULL,name TEXT NOT NULL)
 CREATE TABLE CameraSequence (id INTEGER PRIMARY KEY NOT NULL,sequence INTEGER NOT NULL REFERENCES KeyFrameSequence,camera INTEGER NOT NULL REFERENCES Camera)
-INSERT INTO "Info" VALUES(1, 'checkerboard_ball', 1)
+INSERT INTO "Info" VALUES(1, 'checkerboard-ball', 1)
 INSERT INTO "Container" VALUES(1, 'containers/sphere_norm_uvs.obj')
 INSERT INTO "Actor" VALUES(1, 'Textured_Ball')
 INSERT INTO "Asset" VALUES(1, 1, 'Sphere', 1)
